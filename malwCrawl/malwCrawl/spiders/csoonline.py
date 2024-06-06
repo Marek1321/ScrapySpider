@@ -14,7 +14,9 @@ class CsoonlineSpider(scrapy.Spider):
                 'format': 'json',
                 'indent': 4,
             }
-        }
+        },
+        'ROBOTSTXT_OBEY': False,
+        'AUTOTHROTTLE_ENABLED': True,
     }
 
     def parse(self, response):
